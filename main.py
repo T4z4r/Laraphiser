@@ -571,7 +571,7 @@ h1,h2{{color:#0ff;}}
 .issue{{background:#111;padding:12px;margin:10px 0;border-left:5px solid #0f0;}}
 .file{{color:#0ff;font-weight:bold;}}
 .tag{{background:#022;padding:2px 6px;border-radius:3px;margin:0 3px;}}
-footer{{margin-top:50px;font-style:italic;color:#0a0;}}
+.footer{{margin-top:50px;font-style:italic;color:#0a0;}}
 </style></head><body>
 <h1>LaraPhiser v2.2 Report</h1>
 <p><strong>Crafted by:</strong> T4Z4r</p>
@@ -591,7 +591,7 @@ footer{{margin-top:50px;font-style:italic;color:#0a0;}}
                 html_content += f'<pre style="background:#000;color:#afa;padding:8px;margin-top:6px;">{html.escape(issue["snippet"])}</pre>'
             html_content += '</div>'
 
-        html_content += '<div class="footer">LaraPhiser v2.2 – Crafted with passion by T4Z4r</div></body></html>'
+        html_content += '<footer>LaraPhiser v2.2 – Crafted with passion by T4Z4r</footer></body></html>'
         Path(file).write_text(html_content, encoding="utf-8")
         self.log_msg(f"Report saved: {file}", "#00ff66")
 
